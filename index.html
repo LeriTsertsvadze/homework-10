@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Homework</title>
+  </head>
+  <body>
+    <main>
+      <h1>Aplication Form</h1>
+      <section id="subhead">
+        <p>
+          Welcome newcomer please fill the form and wait for our group's
+          response about your aplication, we will send it to your Email adress.
+        </p>
+      </section>
+      <form action="https://api.everrest.educata.dev/echo/json">
+          <div class="main">
+            <div class="inputs">
+              <input type="text" name="Name" placeholder="Name" minlength="3" value="name" required />
+            </div>
+            <div>
+              <input type="email" name="Email" placeholder="Email" required />
+            </div>
+            <div class="inputs">
+              <label for="positions">Position</label>
+              <select name="position" id="positions" required>
+                <option></option>
+                <option>Acauntant</option>
+                <option>Receptionist</option>
+                <option>Guard</option>
+              </select>
+            </div>
+          </div>
+          <div class="description">
+          <textarea
+            name="aditional"
+            cols="40"
+            rows="10"
+            placeholder="Describe yourself with few words (optional)"
+          ></textarea>
+          <button>Subimit</button>
+        </div>
+        
+      </form>
+    </main>
+  </body>
+</html>
